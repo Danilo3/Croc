@@ -9,6 +9,7 @@ public class TestVowelPalindrome {
         assert TestNoVowels();
         assert TestAllVowels();
         assert TestObvious();
+        assert TestObvious2();
 
     }
 
@@ -33,5 +34,11 @@ public class TestVowelPalindrome {
         String word = "python";
         String answer = VowelPalindrome.vowelPalindrome(word);
         return answer.equals("pothyn");
+    }
+
+    static boolean TestObvious2(){
+        String word = "palindrome";
+        String answer = VowelPalindrome.vowelPalindrome2(word);
+        return answer.equals("pelondrima");
     }
 }
